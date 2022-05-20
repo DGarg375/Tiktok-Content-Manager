@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --magenta : rgba(238, 29, 82, 0.9);
+  --cyan : rgb(105, 201, 208);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* put the colors in CSS variables */
+  --ttmagenta: rgba(238, 29, 82, 0.8);
+
+}
+
+.heading {
+  text-align: center;
+  font-size: 52px;
+  margin-top: 35px;
+  font-family: 'Boogaloo', cursive;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  background-color: white;
+}
+
+#reload {
+  font-size: 70px;
+  color:var(--ttmagenta);
+  background-color: white;
+}
+
+#reload:hover {
+  color: var(--cyan);
+}
+
+#continue_to_myvideos {
+  background-color: rgba(238, 29, 82, 0.9);
+  height: 60px;
+  width: 190px;
+  border-radius: 18px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
+
+#continue_to_myvideos:hover {
+  background-color: var(--cyan);
+}
+
+.continue {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+div.video {
+  width: 325px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: var(--ttmagenta);
+}
+
+#preview_nickname {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  font-style: "sans-serif";
+  text-align: center;
+}
+
+blockquote {
+  border-style: solid;
+  border-color:  var(--ttmagenta);
+  border-width: 2px;
+  border-radius: 10px;
+  background-color:var(--ttmagenta);
+}
+
+iframe {
+  margin-top: -1px;
+  margin-left: -1px;
+}

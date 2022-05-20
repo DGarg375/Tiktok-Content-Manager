@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --magenta : rgba(238, 29, 82, 0.9);
+  --cyan : rgb(105, 201, 208);
+}
+
+body {
+  padding: 40px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%
+}  
+
+div.headerRight {
+  width: 18%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+div.headerLeft {
+  width: 18%;
+}
+
+div.headerCenter {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header.redirect {
+    justify-content: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Boogaloo";
+}
+
+.addNewVideo {
+  background-color: rgba(238, 29, 82, 0.9);
+  height: 60px;
+  width: 190px;
+  border-radius: 18px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
+
+.addNewVideo:hover {
+  background-color: var(--cyan);
+}
+
+main {
+  margin-top: 50px;
+}
+
+#header_line {
+  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.delete_button {
+  font-size: 64px;
+  font-family: 'Boogaloo', cursive;
+  background-color: white;
+  color: rgba(238, 29, 82, 0.9); 
+  margin-top: -15px;
+  margin-left: 10px;
+}
+
+.delete_button:hover {
+  color: var(--cyan);
+}
+
+.video_text_box {
+  border: 1px dashed grey;
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+div span {
+  padding: 30px;
+  font-style: 'Inter', sans-serif;
+  font-size: 18px;
+}
+
+.video_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main_videos {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+}
+
+.first_four_videos {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.last_four_videos {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#playgame {
+  margin-top: 60px;
+}
+
+@media (max-width: 900px) {
+  .main_videos {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .delete_button {
+    font-size: 60px;
+  }
+  .video_text_box {
+    width: 350px;
+  }
+}
+
+@media(max-width: 700px) {
+  .video_text_box {
+    width: 300px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  #header_line {
+    font-size: 15px;
+  }
+}
